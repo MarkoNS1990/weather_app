@@ -2,6 +2,8 @@ const search = document.querySelector('.search');
 const input = document.querySelector('.input');
 const cityName = document.querySelector('.city-name');
 const temp = document.querySelector('.temp');
+const img = document.querySelector('.img')
+const infoText = document.querySelector('.info-text')
 
 const toCelsius = (kelvin) => (kelvin - 273.15).toFixed(1);
 
@@ -47,8 +49,18 @@ search.addEventListener('click', () => {
                 f.style.display = 'none'
               })
             })
-        
+        if(data.main.temp>300){
+          img.src='images/hot.jpg'
+          infoText.innerText='It is hot outside, go for a swim!'
+        }else if(data.main.temp >290){
+          img.src = 'images/walk.jpg'
+          infoText.innerText='It is nice outside, go for a walk!'
+        }else{
+          img.src = 'images/cold.jpg'
+          infoText.innerText='It is cold outside, dont go anywhere!'
+        }
     })
+
     .catch(() => {
       temp.innerText = 'Oops I didnt find your city! Please check if you typed it correctly.';
     });
