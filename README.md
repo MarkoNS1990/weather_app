@@ -1,22 +1,19 @@
-# To-Do App
+# Weather App
 
 ## Description
 
-In this project I built a to do app using plain JavaScript.You can make a new project and inside each project make a task, you can set the task priority and due dates.
-You can also delete each task or project.I used LocalStorage for storing the data and uuid for generating random id's.
+This is a simple weather app in which you can enter city name and weather info for that city will be shown.
+I used fetch API to fetch the data from weather-api.
 
 ## Built With
 
 - JavaScript
-- Webpack
 - Bootstrap
 
 ## Set up this project locally
 
 - Open the terminal in the directory where you want to install the app;
-- Run command `https://github.com/MarkoNS1990/to_do_app` which will clone the project;
-- Switch to the main directory of project using cd;
-- Run `npm/yarn install webpack webpack-cli --save-dev` in your computer terminal to install Webpack (you will need Node.js installed on your machine);
+- Run command `https://github.com/MarkoNS1990/weather_app` which will clone the project;
 - Open index.html file in your browser;
 - Use it.
 
@@ -26,7 +23,7 @@ You can also delete each task or project.I used LocalStorage for storing the dat
 
 ### Deployment
 
-This application is deployed on [GitHubPages](https://markons1990.github.io/to_do_app/).
+This application is deployed on [GitHubPages](https://markons1990.github.io/weather_app/).
 
 ## Author
 

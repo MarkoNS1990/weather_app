@@ -6,6 +6,7 @@ body {
   color: rgb(73, 73, 202);
   font-weight: bold;
 }
+
 .input:focus::placeholder {
   color: transparent;
 }
