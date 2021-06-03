@@ -1,0 +1,24 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "Simple weather app",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkoNS1990/weather_app.git"
+  },
+  "author": "Marko Zecevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkoNS1990/weather_app/issues"
+  },
+  "homepage": "https://github.com/MarkoNS1990/weather_app#readme",
+  "dependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
+}

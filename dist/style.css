@@ -14,3 +14,15 @@ body {
 .lead {
   font-size: 18px;
 }
+
+.toggleMe {
+  display: block;
+}
+
+.fahr {
+  display: none;
+}
+
+.cels {
+  display: none;
+}
