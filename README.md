@@ -19,7 +19,7 @@ I used fetch API to fetch the data from weather-api.
 
 ## Screenshot
 
-![](ss.JPG)
+![](./ss.JPG)
 
 ### Deployment
 
@@ -37,7 +37,7 @@ Contributions, issues, and feature requests are welcome!
 
 If you want to contribute, you can clone this project or fork it.
 
-If you found an issue, feel free to check the [issues page](https://github.com/MarkoNS1990/to_do_app/issues).
+If you found an issue, feel free to check the [issues page](https://github.com/MarkoNS1990/weather_app/issues).
 
 ## Show your support
 
