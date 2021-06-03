@@ -25,7 +25,7 @@ search.addEventListener('click', () => {
         <h1 class='fahr'>${toFahr(data.main.temp)} F</h1>
         <h1 class='cels'>${toCelsius(data.main.temp)} &#8451;</h1>
             <p class='lead mt-3 cels'>MIN: ${toCelsius(data.main.temp_min)} &#8451; | MAX: ${toCelsius(data.main.temp_min)} &#8451;</p>
-            <p class='lead mt-3 fahr'>MIN: ${toFahr(data.main.temp_min)} F | MAX: ${toFahr(data.main.temp_min)} F</p>
+            <p class='lead mt-3 fahr'>MIN: ${toFahr(data.main.temp_min)} F | MAX: ${toFahr(data.main.temp_max)} F</p>
             <p class='lead '>Humidity: ${data.main.humidity} %</p>
             <p class='lead '>Wind speed: ${toKmPerHour(data.wind.speed)} km/h</p>   
             `;
