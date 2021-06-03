@@ -49,6 +49,7 @@ search.addEventListener('click', () => {
                 f.style.display = 'none'
               })
             })
+            img.style.display='flex'
         if(data.main.temp>300){
           img.src='images/hot.jpg'
           infoText.innerText='It is hot outside, go for a swim!'
