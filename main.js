@@ -25,6 +25,9 @@ search.addEventListener('click',()=>{
             <p class='lead '>Wind speed: ${toKmPerHour(data.wind.speed)} km/h</p>    
             `
         })
+        .catch((err)=>{
+            temp.innerText = 'Oops I didnt find your city! Please check if you typed it correctly.'
+        })
         input.value =''
 })
 
