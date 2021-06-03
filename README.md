@@ -3,6 +3,7 @@
 ## Description
 
 This is a simple weather app in which you can enter city name and weather info for that city will be shown.
+You can see temperatures both in Fahrenheits or Celsius.
 I used fetch API to fetch the data from weather-api.
 
 ## Built With
