@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(161, 143, 143);
+}
+
+.input::placeholder {
+  color: rgb(73, 73, 202);
+  font-weight: bold;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.lead {
+  font-size: 18px;
+}
+
+.toggleMe {
+  display: block;
+}
+
+.fahr {
+  display: none;
+}
+
+.cels {
+  display: none;
+}
