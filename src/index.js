@@ -66,8 +66,10 @@ search.addEventListener('click', () => {
       temp.innerText = 'Oops I didnt find your city! Please check if you typed it correctly.';
     });
   input.value = '';
-  
-  
-
+  temp.innerHTML = ''
+  img.innerHTML = ''
+  cityName.innerHTML=''
+  infoText.innerText=''
+  img.style.display='none'  
  
 });
