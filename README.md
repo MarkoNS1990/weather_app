@@ -18,8 +18,6 @@ I used fetch API to fetch the data from weather-api.
 - `cd weather_app`
 - run `npm install` to install dependencies
 - run `npm run start` to start the app
-- Open index.html file in your browser;
-- Use it.
 
 ## Screenshot
 
