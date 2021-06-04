@@ -19,12 +19,10 @@ search.addEventListener('click', () => {
     .then((data) => {
       console.log(data)
       cityName.innerHTML = `<img src="https://www.countryflags.io/${data.sys.country}/flat/64.png"> ${data.name}, ${data.sys.country}`;
-      temp.innerHTML = `<h1>${data.main.temp} K</h1>
-        <button class='fahrBtn'>Fahrenheits</button>
-        <button class='celsBtn'>Celsius</button>
+      temp.innerHTML = `<h1 class='cels'>${toCelsius(data.main.temp)} &#8451</h1>
         <h1 class='fahr'>${toFahr(data.main.temp)} F</h1>
-        <h1 class='cels'>${toCelsius(data.main.temp)} &#8451;</h1>
-            <p class='lead mt-3 cels'>MIN: ${toCelsius(data.main.temp_min)} &#8451; | MAX: ${toCelsius(data.main.temp_max)} &#8451;</p>
+        <button class='fahrBtn btn btn-secondary'>To Fahrenheits</button>
+        <p class='lead mt-3 cels'>MIN: ${toCelsius(data.main.temp_min)} &#8451; | MAX: ${toCelsius(data.main.temp_max)} &#8451;</p>
             <p class='lead mt-3 fahr'>MIN: ${toFahr(data.main.temp_min)} F | MAX: ${toFahr(data.main.temp_max)} F</p>
             <p class='lead '>Humidity: ${data.main.humidity} %</p>
             <p class='lead '>Wind speed: ${toKmPerHour(data.wind.speed)} km/h</p>   
@@ -32,23 +30,34 @@ search.addEventListener('click', () => {
             const fahrBtn = document.querySelector('.fahrBtn')
             const celsBtn  = document.querySelector('.celsBtn')
             const fahr = document.querySelectorAll('.fahr')
+            
             const cels = document.querySelectorAll('.cels')
+            
+            let arr = Array.from(fahr)
+            console.log(arr)
+            
             fahrBtn.addEventListener('click',()=>{
-              fahr.forEach(f=>{
-                f.style.display = 'block'
-              })
-              cels.forEach(f=>{
-                f.style.display = 'none'
-              })
+              if(arr.every(f=>f.style.display === 'none' ) || arr.every(f=>f.style.display === '' )){
+                fahrBtn.textContent='To Celsius'
+                fahr.forEach(f=>{
+                  f.style.display = 'block'
+                })
+                cels.forEach(f=>{
+                  f.style.display = 'none'
+                })
+              }else{
+                fahrBtn.textContent='To Fahrenheits'
+                cels.forEach(f=>{
+                  f.style.display = 'block'
+                })
+                fahr.forEach(f=>{
+                  f.style.display = 'none'
+                })
+              }
+             
             })
-            celsBtn.addEventListener('click',()=>{
-              cels.forEach(f=>{
-                f.style.display = 'block'
-              })
-              fahr.forEach(f=>{
-                f.style.display = 'none'
-              })
-            })
+            
+            
             img.style.display='flex'
         if(data.main.temp>300){
           img.src='images/hot.jpg'
