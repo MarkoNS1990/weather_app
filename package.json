@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack serve --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -19,11 +19,10 @@
     "url": "https://github.com/MarkoNS1990/weather_app/issues"
   },
   "homepage": "https://github.com/MarkoNS1990/weather_app#readme",
-  "dependencies": {
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
   }
 }

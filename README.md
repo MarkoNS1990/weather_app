@@ -17,6 +17,7 @@ I used fetch API to fetch the data from weather-api.
 - Run command `https://github.com/MarkoNS1990/weather_app` which will clone the project;
 - `cd weather_app`
 - run `npm install` to install dependencies
+- run `npm run start` to start the app
 - Open index.html file in your browser;
 - Use it.
 
