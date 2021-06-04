@@ -18,8 +18,7 @@
   "ignorePatterns": [
     "dist/",
     "build/",
-    "src/index.js",
-    "webpack.config.js"
+    "src/index.js"
   ]
   
 }
