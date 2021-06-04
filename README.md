@@ -15,6 +15,8 @@ I used fetch API to fetch the data from weather-api.
 
 - Open the terminal in the directory where you want to install the app;
 - Run command `https://github.com/MarkoNS1990/weather_app` which will clone the project;
+- `cd weather_app`
+- run `npm install` to install dependencies
 - Open index.html file in your browser;
 - Use it.
 
